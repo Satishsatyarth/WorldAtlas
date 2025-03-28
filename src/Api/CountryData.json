@@ -1,0 +1,108 @@
+[
+    {
+      "id": 1,
+      "countryName": "United States",
+      "capital": "Washington, D.C.",
+      "population": 331000000,
+      "interestingFact": "The United States has the world's largest economy and is home to Silicon Valley, the global hub of technology innovation."
+    },
+    {
+      "id": 2,
+      "countryName": "China",
+      "capital": "Beijing",
+      "population": 1410000000,
+      "interestingFact": "China has the world's largest population and is home to the Great Wall, which is visible from space."
+    },
+    {
+      "id": 3,
+      "countryName": "India",
+      "capital": "New Delhi",
+      "population": 1430000000,
+      "interestingFact": "India is the world's largest democracy and the birthplace of the number zero."
+    },
+    {
+      "id": 4,
+      "countryName": "Brazil",
+      "capital": "Brasília",
+      "population": 216000000,
+      "interestingFact": "Brazil has the Amazon Rainforest, which produces 20% of the world's oxygen, and is the largest coffee producer."
+    },
+    {
+      "id": 5,
+      "countryName": "Russia",
+      "capital": "Moscow",
+      "population": 144000000,
+      "interestingFact": "Russia is the largest country by land area and has the world's longest railway, the Trans-Siberian Railway."
+    },
+    {
+      "id": 6,
+      "countryName": "United Kingdom",
+      "capital": "London",
+      "population": 67000000,
+      "interestingFact": "The UK has the world's oldest monarchy and is the birthplace of Shakespeare."
+    },
+    {
+      "id": 7,
+      "countryName": "Germany",
+      "capital": "Berlin",
+      "population": 83000000,
+      "interestingFact": "Germany is known for its engineering and automotive industry and hosts the world’s largest beer festival, Oktoberfest."
+    },
+    {
+      "id": 8,
+      "countryName": "France",
+      "capital": "Paris",
+      "population": 65000000,
+      "interestingFact": "France is the most visited country in the world and home to the Louvre, the largest art museum."
+    },
+    {
+      "id": 9,
+      "countryName": "Japan",
+      "capital": "Tokyo",
+      "population": 125000000,
+      "interestingFact": "Japan has the highest life expectancy and more vending machines than people."
+    },
+    {
+      "id": 10,
+      "countryName": "Canada",
+      "capital": "Ottawa",
+      "population": 38000000,
+      "interestingFact": "Canada is the second-largest country by land area and has the longest coastline in the world."
+    },
+    {
+      "id": 11,
+      "countryName": "Australia",
+      "capital": "Canberra",
+      "population": 26000000,
+      "interestingFact": "Australia is home to the Great Barrier Reef and has more kangaroos than people."
+    },
+    {
+      "id": 12,
+      "countryName": "Italy",
+      "capital": "Rome",
+      "population": 59000000,
+      "interestingFact": "Italy is the birthplace of the Renaissance and the home of Vatican City, the smallest country in the world."
+    },
+    {
+      "id": 13,
+      "countryName": "South Africa",
+      "capital": "Pretoria",
+      "population": 60000000,
+      "interestingFact": "South Africa has three capital cities and is known for the discovery of the world's largest diamond."
+    },
+    {
+      "id": 14,
+      "countryName": "Mexico",
+      "capital": "Mexico City",
+      "population": 128000000,
+      "interestingFact": "Mexico was the birthplace of chocolate and has the most museums in the world."
+    },
+    {
+      "id": 15,
+      "countryName": "South Korea",
+      "capital": "Seoul",
+      "population": 52000000,
+      "interestingFact": "South Korea is known for K-pop, has the fastest internet speed, and celebrates a unique Valentine's Day for singles."
+    }
+  ]
+  
