@@ -58,7 +58,7 @@ export default function Footers() {
                 </li>
                 <li>
                   <NavLink
-                    to="https://github.com/Satish-satyarth"
+                    to="https://github.com/Satishsatyarth"
                     target="_blank"
                   >
                     Source Code
