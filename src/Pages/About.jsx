@@ -30,7 +30,7 @@ export const About = () => {
                   {interestingFact.length > 40
                     ? interestingFact.slice(0, 40) + "..."
                     : interestingFact}
-                </p>no
+                </p>
               </div>
             </div>
           );
