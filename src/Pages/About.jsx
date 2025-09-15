@@ -1,4 +1,4 @@
-import countryFacts from "../api/CountryData.json";
+import countryFacts from "../Api/CountryData.json";
 
 export const About = () => {
   return (
