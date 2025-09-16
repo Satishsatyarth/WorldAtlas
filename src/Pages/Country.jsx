@@ -1,4 +1,3 @@
-
 import { useEffect, useState, useTransition } from "react";
 import { getCountryData } from "../Api/PostApi";
 import { Loader } from "../Component/UI/Loader";
@@ -8,34 +7,38 @@ import { SearchFilter } from "../Component/UI/SearchFilter";
 export const Country = () => {
   const [isPending, startTransition] = useTransition();
   const [countries, setCountries] = useState([]);
+  const [error, setError] = useState("");
 
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all");
 
   useEffect(() => {
     startTransition(async () => {
-      const res = await getCountryData();
-      setCountries(res.data);
+      try {
+        const res = await getCountryData();
+        setCountries(res); // ✅ res already contains .data in PostApi
+      } catch (err) {
+        setError(err.message || "Failed to load country data.");
+      }
     });
   }, []);
 
   if (isPending) return <Loader />;
-
-  // console.log(search, filter);
+  if (error) return <div className="text-red-500 text-center">{error}</div>;
 
   const searchCountry = (country) => {
     if (search) {
       return country.name.common.toLowerCase().includes(search.toLowerCase());
     }
-    return country;
+    return true; // ✅ must return boolean, not object
   };
 
   const filterRegion = (country) => {
-    if (filter === "all") return country;
+    if (filter === "all") return true;
     return country.region === filter;
   };
 
-  // here is the main logic
+  // main logic
   const filterCountries = countries.filter(
     (country) => searchCountry(country) && filterRegion(country)
   );
@@ -52,9 +55,9 @@ export const Country = () => {
       />
 
       <ul className="grid grid-four-cols">
-        {filterCountries.map((curCountry, index) => {
-          return <CountryCard country={curCountry} key={index} />;
-        })}
+        {filterCountries.map((curCountry, index) => (
+          <CountryCard country={curCountry} key={index} />
+        ))}
       </ul>
     </section>
   );
